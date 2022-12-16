@@ -11,6 +11,12 @@ namespace CircularQueues
         int FRONT, REAR, max = 5;
         int[] queue_array = new int[5];
 
+        public Queues()
+        {
+            /*membuat konstruktor untuk menginisialisasi antrian dalam keadaan kosong*/
+            FRONT = -1;
+            REAR = -1;
+        }
     }
     class Program
     {
