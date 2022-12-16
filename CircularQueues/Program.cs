@@ -85,6 +85,17 @@ namespace CircularQueues
                 Console.WriteLine("\nQueue is empty\n");
                 return;
             }
+            Console.WriteLine("\nElement in the Queue are.................. \n");
+            if (FRONT_position <= REAR_position)
+            {
+                while (FRONT_position <= REAR_position)
+                {
+                    Console.Write(queue_array[FRONT_position] + "   ");
+                    FRONT_position++;
+                }
+                Console.WriteLine();
+            }
+            
         }
     }
     class Program
