@@ -46,7 +46,16 @@ namespace CircularQueues
                 }
             }
             queue_array[REAR] = element;
+        }
 
+        public void remove()
+        {
+            //mengecek apakah antrian kosong atau tidak
+            if (FRONT == -1)
+            {
+                Console.WriteLine("\nQueue undervlow\n");
+                return;
+            }
         }
     }
     class Program
