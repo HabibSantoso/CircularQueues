@@ -26,6 +26,14 @@ namespace CircularQueues
                 Console.WriteLine("\nQueue overflow\n");
                 return;
             }
+
+            //mengecek antrian kosong atau tidak
+            if (FRONT == -1)
+            {
+                FRONT = 0;
+                REAR = 0;
+            }
+
         }
     }
     class Program
