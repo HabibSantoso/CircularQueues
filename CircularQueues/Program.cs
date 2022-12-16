@@ -33,6 +33,19 @@ namespace CircularQueues
                 FRONT = 0;
                 REAR = 0;
             }
+            else
+            {
+                //mengecek apakah rear ada di penghujung array
+                if (REAR == max - 1)
+                {
+                    REAR = 0;
+                }
+                else
+                {
+                    REAR = REAR + 1;
+                }
+            }
+            queue_array[REAR] = element;
 
         }
     }
