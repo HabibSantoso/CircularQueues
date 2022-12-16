@@ -61,6 +61,18 @@ namespace CircularQueues
                 FRONT = -1;
                 REAR = -1;
             }
+            else
+            {
+                //pengapusan di akhir array
+                if (FRONT == max - 1)
+                {
+                    FRONT = 0;
+                }else
+                {
+                    //penghapusan di tengah array
+                    FRONT = FRONT = 1;
+                }
+            }
         }
     }
     class Program
