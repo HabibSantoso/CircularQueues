@@ -56,6 +56,11 @@ namespace CircularQueues
                 Console.WriteLine("\nQueue undervlow\n");
                 return;
             }
+            if (FRONT == REAR)
+            {
+                FRONT = -1;
+                REAR = -1;
+            }
         }
     }
     class Program
